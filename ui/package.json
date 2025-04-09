@@ -13,7 +13,7 @@
     "prettify:write": "prettier --write './**/*.{ts,tsx}'",
     "typecheck": "tsc --noEmit",
     "convert-icons": "npx @svgr/cli --typescript --no-prettier --icon --out-dir ./src/components/icons ./public/icons && prettier --write './src/components/icons/*.{ts,tsx}'",
-    "install-vercel": "sh ./scripts/install-vercel.sh",
+    "install-vercel": "cd .. && ls && cd ui && sh ./scripts/install-vercel.sh",
     "build-vercel": "sh ./scripts/build-vercel.sh",
     "migrate-db": "bunx drizzle-kit generate && bunx drizzle-kit migrate"
   },
